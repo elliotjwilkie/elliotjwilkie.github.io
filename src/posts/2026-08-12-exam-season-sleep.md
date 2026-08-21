@@ -1,17 +1,17 @@
 ---
 layout: post.njk
-title: "Why exam season wrecks your sleep (and what actually helps)"
-date: 2026-08-12
-tag: "Wellbeing"
-excerpt: "Revision, screens and looming deadlines are a rough combo for your sleep cycle. Here's what's going on and a few small changes worth trying before results day."
-permalink: "/blog/why-exam-season-wrecks-your-sleep/"
+title: "Medical stuff eh?: \"Medicaly doctorate and very medical\""
+date: 2026-07-05
+tag: "Q&A"
+excerpt: "Medical stuff is often used as a topic for advanced yapping, yapping allows peopkle to take up space, pretty peak tbh."
+permalink: "/blog/ask-a-medic-dizziness-after-growth-spurts/"
 ---
-This is placeholder body copy for a single blog post page. Replace it with real writing whenever you're ready — the layout, spacing and type are already set up to match the rest of the site.
+Placeholder body copy — replace with the real answer.
 
-## What's actually going on
+## Doctor and talking
 
-Swap this paragraph for your real content. You can add as many paragraphs and subheadings as the post needs; the card grows to fit.
+Placeholder.
 
-## A few things worth trying
+## Teen medical talks, talks about medical stuff conducted by... teens.
 
-Another placeholder paragraph. Every file in `src/posts/` becomes a page like this one automatically, and shows up on the blog list — no HTML editing required.
+Wow this blog SUCKS
