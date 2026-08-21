@@ -1,17 +1,17 @@
 ---
 layout: post.njk
-title: "Ask a Medic: \"Is it normal to feel dizzy after growth spurts?\""
+title: "Medical stuff eh?: \"Medicaly doctorate and very medical\""
 date: 2026-07-05
 tag: "Q&A"
-excerpt: "A reader question answered by one of our med-student volunteers, plus when dizziness is worth mentioning to a GP."
+excerpt: "Medical stuff is often used as a topic for advanced yapping, yapping allows peopkle to take up space, pretty peak tbh."
 permalink: "/blog/ask-a-medic-dizziness-after-growth-spurts/"
 ---
 Placeholder body copy — replace with the real answer.
 
-## The short answer
+## Doctor and talking
 
 Placeholder.
 
-## When to see a GP
+## Teen medical talks, talks about medical stuff conducted by... teens.
 
-Placeholder.
+Wow this blog SUCKS
