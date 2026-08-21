@@ -1,17 +1,17 @@
 ---
 layout: post.njk
-title: "\"Burnout\" isn't just a buzzword — here's what it means for teens"
-date: 2026-07-28
-tag: "Mental Health"
-excerpt: "You've probably heard adults talk about burnout at work. Turns out it shows up at school too. We break down the signs and when it's worth talking to someone."
-permalink: "/blog/burnout-isnt-just-a-buzzword/"
+title: "Medical stuff eh?: \"Medicaly doctorate and very medical\""
+date: 2026-07-05
+tag: "Q&A"
+excerpt: "Medical stuff is often used as a topic for advanced yapping, yapping allows peopkle to take up space, pretty peak tbh."
+permalink: "/blog/ask-a-medic-dizziness-after-growth-spurts/"
 ---
-Placeholder body copy — replace with the real post.
+Placeholder body copy — replace with the real answer.
 
-## The signs
+## Doctor and talking
 
-List a few signs here.
+Placeholder.
 
-## When to talk to someone
+## Teen medical talks, talks about medical stuff conducted by... teens.
 
-A closing paragraph on next steps or where to get support.
+Wow this blog SUCKS
