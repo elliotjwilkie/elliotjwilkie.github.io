@@ -1,0 +1,16 @@
+---
+layout: base.njk
+nav: blog-post
+---
+<a class="back-link" href="{{ '/blog/' | url }}">← Back to blog</a>
+
+<div class="post-meta">
+  <span>{{ date | readableDate }}</span>
+  <span class="dot"></span>
+  <span>{{ tag }}</span>
+</div>
+<h1 class="post-title">{{ title }}</h1>
+
+<article class="post-body">
+  {{ content | safe }}
+</article>

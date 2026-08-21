@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% if title %}{{ title }} · {% endif %}{{ site.title }}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+</head>
+<body>
+
+  <div class="blob blob--one"></div>
+  <div class="blob blob--two"></div>
+
+  <nav class="site-nav" aria-label="Main">
+    <a href="{{ '/' | url }}" {% if nav == "home" %}class="active"{% endif %}>Home</a>
+    <a href="{{ '/blog/' | url }}" {% if nav == "blog" %}class="active"{% endif %}>Blog</a>
+    <a href="{{ '/gallery/' | url }}" {% if nav == "gallery" %}class="active"{% endif %}>Gallery</a>
+  </nav>
+
+  <main{% if nav == "blog-post" %} class="post-page"{% endif %}>
+    {{ content | safe }}
+  </main>
+
+  <footer>
+    <div class="socials">
+      <a href="{{ site.instagram }}" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+          <circle cx="12" cy="12" r="4"></circle>
+          <circle cx="17.2" cy="6.8" r="1"></circle>
+        </svg>
+      </a>
+      <a href="{{ site.tiktok }}" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M16.5 3c.4 2.1 1.8 3.6 4 3.9v2.7c-1.4.1-2.7-.3-4-1.1v6.6c0 3.3-2.7 5.9-6 5.9s-6-2.6-6-5.9 2.7-5.9 6-5.9c.4 0 .8 0 1.1.1v2.8c-.3-.1-.7-.2-1.1-.2-1.7 0-3.1 1.4-3.1 3.2s1.4 3.2 3.1 3.2 3.2-1.4 3.2-3.2V3h2.8z"></path>
+        </svg>
+      </a>
+      <a href="mailto:{{ site.email }}" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="5" width="18" height="14" rx="3"></rect>
+          <path d="M3 7l9 6 9-6"></path>
+        </svg>
+      </a>
+    </div>
+    <p class="footer-note">&copy; {{ site.year }} {{ site.title }}</p>
+  </footer>
+
+</body>
+</html>

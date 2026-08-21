@@ -1,0 +1,31 @@
+---
+layout: base.njk
+nav: blog
+permalink: /blog/
+title: Blog
+---
+<div class="page-head">
+  <h1 class="page-title">From the blog</h1>
+  <p class="page-sub">Bite-sized reads on health, school stress and growing up — written with teens in mind.</p>
+</div>
+
+{% if collections.posts.length %}
+<div class="post-list">
+  {% for post in collections.posts %}
+  <a class="post-card" href="{{ post.url | url }}">
+    <div class="post-meta">
+      <span>{{ post.data.date | readableDate }}</span>
+      <span class="dot"></span>
+      <span>{{ post.data.tag }}</span>
+    </div>
+    <h2 class="post-title">{{ post.data.title }}</h2>
+    <p class="post-excerpt">{{ post.data.excerpt }}</p>
+    <span class="post-readmore">Read the post →</span>
+  </a>
+  {% endfor %}
+</div>
+{% else %}
+<div class="empty-state">
+  No posts yet — publish your first one from <a href="{{ '/admin/' | url }}">/admin</a> and it'll show up here automatically.
+</div>
+{% endif %}

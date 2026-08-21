@@ -1,0 +1,13 @@
+{
+  "name": "teen-medic-talks",
+  "version": "1.0.0",
+  "description": "Teen Medic Talks — static site with blog and gallery, built with Eleventy.",
+  "private": true,
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

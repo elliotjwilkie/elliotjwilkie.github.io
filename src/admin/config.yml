@@ -1,0 +1,49 @@
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/YOUR-REPO-NAME   # <-- change this
+  branch: main
+
+# Where uploaded images are stored in the repo, and the URL path
+# they're served at once the site is built.
+media_folder: "src/images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: simple
+
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    label_singular: "Post"
+    folder: "src/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    format: "frontmatter"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post.njk" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - label: "Tag"
+        name: "tag"
+        widget: "select"
+        options: ["Wellbeing", "Mental Health", "Q&A", "News"]
+      - { label: "Excerpt", name: "excerpt", widget: "text", hint: "1–2 sentences shown on the blog list page." }
+      - label: "URL"
+        name: "permalink"
+        widget: "string"
+        hint: "e.g. /blog/my-post-title/ — must start and end with a slash."
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "gallery"
+    label: "Gallery"
+    files:
+      - name: "gallery"
+        label: "Gallery Photos"
+        file: "src/_data/gallery.json"
+        fields:
+          - name: "photos"
+            label: "Photos"
+            widget: "list"
+            default: []
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Description (for screen readers)", name: "alt", widget: "string" }

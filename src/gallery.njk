@@ -1,0 +1,32 @@
+---
+layout: base.njk
+nav: gallery
+permalink: /gallery/
+title: Gallery
+---
+<div class="page-head">
+  <h1 class="page-title">Gallery</h1>
+  <p class="page-sub">Snapshots from workshops, school talks and events. Add photos from <a href="{{ '/admin/' | url }}">/admin</a> and they'll appear here automatically.</p>
+</div>
+
+<div class="gallery-grid">
+  {% for photo in gallery.photos %}
+  <div class="gallery-tile">
+    <img src="{{ photo.image | url }}" alt="{{ photo.alt }}">
+  </div>
+  {% endfor %}
+
+  {% set placeholdersNeeded = 6 - gallery.photos.length %}
+  {% if placeholdersNeeded > 0 %}
+    {% for i in range(0, placeholdersNeeded) %}
+    <div class="gallery-tile is-empty">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="4" width="18" height="16" rx="3"></rect>
+        <circle cx="8.5" cy="9.5" r="1.5"></circle>
+        <path d="M21 16l-5.5-5.5a2 2 0 0 0-2.8 0L4 19"></path>
+      </svg>
+      <span>Add a photo</span>
+    </div>
+    {% endfor %}
+  {% endif %}
+</div>

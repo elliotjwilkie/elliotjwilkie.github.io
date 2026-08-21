@@ -1,0 +1,33 @@
+---
+layout: base.njk
+nav: home
+---
+<img class="logo" src="{{ site.logo }}" alt="{{ site.title }} Logo">
+
+<h1 class="tagline">{{ site.title }}</h1>
+
+<p class="blurb">
+  this is some place holder text, for anything really. but probably a brief introduction to "teen medic talk" or whatever. Im just gonna paste in the first paragraph i find on the popeyes website now, so it will take up space and look realistic. In Louisiana, if something's THAT good, it's worth sharing. That's why, over 50 years ago, Al Copeland set out to serve the best fried chicken in America. With bold seasonings, Cajun spices and that famous shatter crunch, it was only a matter of time before word spread. Now, you can take a bite out of a New Orleans favourite in over 4,000 restaurants around the globe. So pull up a chair, we saved you a little something.
+</p>
+
+<div class="teasers">
+  <a class="teaser-card" href="{{ '/blog/' | url }}">
+    <svg class="teaser-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 19.5V6a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v10.5"></path>
+      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H19"></path>
+      <path d="M8 7h7"></path>
+      <path d="M8 10.5h7"></path>
+    </svg>
+    <span class="teaser-title">Blog</span>
+    <span class="teaser-sub">Posts on health, school &amp; growing up</span>
+  </a>
+  <a class="teaser-card" href="{{ '/gallery/' | url }}">
+    <svg class="teaser-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="4" width="18" height="16" rx="3"></rect>
+      <circle cx="8.5" cy="9.5" r="1.5"></circle>
+      <path d="M21 16l-5.5-5.5a2 2 0 0 0-2.8 0L4 19"></path>
+    </svg>
+    <span class="teaser-title">Gallery</span>
+    <span class="teaser-sub">Photos from events &amp; workshops</span>
+  </a>
+</div>
