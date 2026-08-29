@@ -1,7 +1,8 @@
 backend:
   name: github
-  repo: YOUR-GITHUB-USERNAME/YOUR-REPO-NAME   # <-- change this
+  repo: elliotjwilkie/elliotjwilkie.github.io   # <-- change this
   branch: main
+  base_url: https://teenmedictalks.vercel.app/
 
 # Where uploaded images are stored in the repo, and the URL path
 # they're served at once the site is built.
